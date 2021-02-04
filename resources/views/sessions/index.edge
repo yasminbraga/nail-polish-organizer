@@ -1,0 +1,28 @@
+@layout('layouts/master')
+
+@section('content')
+  <div class="login-container">
+    <div class="card card-login">
+      <div class="login-form">
+        <h2>Login</h2>
+        <form class="form" action="{{ route('sessions.store') }}" method="post">
+          
+          <input type="text" placeholder="Email" name="email">
+          <input type="password" placeholder="Senha" name="password">
+          
+          <button class="btn">Entrar</button>
+        </form>
+
+        <div class="form-footer">
+          <p>Ainda não tem conta? <a href="">Cadastre-se</a></p>
+        </div>
+      </div>
+
+      <div class="login-image">
+        <img src="/assets/nail.png" alt="">
+      </div>
+
+
+    </div>
+  </div>
+@endsection
